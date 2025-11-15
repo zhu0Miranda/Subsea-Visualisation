@@ -1,10 +1,15 @@
 project中：
+
 main为主程序入口，生成训练数据集
+
 config/simulation_params.yaml用来存储仿真参数所有的配置文件，包括仿真设置、声源参数、沉积层参数范围、沉积物类型定义和噪声参数等，便于修改和调整
 
 core/sediment_generator.py用于生成随机的海底沉积层地质模型，可生成随机层状模型并随机添加地质特征，以及生成语义分割标注掩码用于神经网络训练
+
 core/acoustic_simulator.py用于模拟声波在沉积层中的传播和反射，生成合成声呐信号
+
 core/sensor_simulator.py用于模拟传感器效应和噪声
+
 core/data_augmentation.py 用于对生成的声呐数据进行数据增强，提高神经网络训练的鲁棒性
 
 utils/file_io.py提供数据保存和读取功能
