@@ -17,8 +17,6 @@ sonar_simulation/
 │   ├── file_io.py            # 数据存储和读取工具
 │   └── encoding_helper.py     # 编码处理工具
 ├── examples/                  # 示例程序
-│   ├── demo_generation.py     # 完整功能演示
-│   ├── demo_gb18030.py       # 中文编码环境演示
 │   └── simple_demo.py        # 简化演示版本
 ├── main.py                   # 主仿真程序
 ├── main_fixed.py             # 修复编码问题的主程序
