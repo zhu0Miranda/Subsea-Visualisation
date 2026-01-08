@@ -19,7 +19,6 @@ sonar_simulation/
 ├── examples/                  # 示例程序
 │   └── simple_demo.py        # 简化演示版本
 ├── main.py                   # 主仿真程序
-├── main_fixed.py             # 修复编码问题的主程序
 ├── run_project.py            # 项目启动脚本
 └── requirements.txt          # 依赖包列表
 ```
@@ -78,5 +77,5 @@ python run_project.py
 
 3. **生成训练数据集**：
 ```bash
-python main_fixed.py
+python main.py
 ```
