@@ -1,0 +1,46 @@
+# 仿真参数配置
+simulation:
+  sample_rate: 100000  # 采样率 (Hz)
+  duration: 0.1        # 信号持续时间 (s)
+  num_traces: 64       # 每道数
+  trace_length: 1024   # 每道采样点数
+
+# 声源参数
+source:
+  frequency: 10000     # 中心频率 (Hz)
+  bandwidth: 8000      # 带宽 (Hz)
+  pulse_type: "ricker" # 脉冲类型
+
+# 沉积层参数范围
+sediment:
+  min_layers: 1
+  max_layers: 8
+  thickness_range: [0.1, 5.0]  # 厚度范围 (m)
+  density_range: [1200, 2200]  # 密度范围 (kg/m³)
+  velocity_range: [1450, 2200] # 声速范围 (m/s)
+  attenuation_range: [0.1, 5.0] # 衰减系数 (dB/m/kHz)
+
+# 沉积物类型定义
+sediment_types:
+  clay:
+    density: [1500, 1700]
+    velocity: [1470, 1550]
+    attenuation: [0.5, 1.5]
+  silt:
+    density: [1650, 1850]
+    velocity: [1550, 1650]
+    attenuation: [1.0, 2.5]
+  sand:
+    density: [1800, 2100]
+    velocity: [1650, 1850]
+    attenuation: [2.0, 4.0]
+  gravel:
+    density: [1900, 2200]
+    velocity: [1800, 2200]
+    attenuation: [3.0, 5.0]
+
+# 噪声参数
+noise:
+  snr_range: [10, 30]          # 信噪比范围 (dB)
+  reverberation_level: 0.1     # 混响水平
+  electronic_noise: 0.05       # 电子噪声水平
